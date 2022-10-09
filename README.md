@@ -1,1 +1,1 @@
-# EXPERT-SYSTEM-FOR-SEARCHING-ROOM-IN-BUILDING
+The objective of this assignment is to inculcate the concepts of first order logic and expert system. This assignment will help to understand the concepts of unification, recursion, backward and forward chaining using logical programming in prolog. 
