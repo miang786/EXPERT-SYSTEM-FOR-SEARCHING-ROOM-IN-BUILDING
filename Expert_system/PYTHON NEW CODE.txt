@@ -1,0 +1,295 @@
+#<<-------------------------LIST OF ALL THE IMPORTED MODULES------------------------->>
+from pyswip import prolog
+from tkinter import *
+from tkinter import messagebox
+import tkinter as tk
+
+#<<-------------------------DISPLAYING MAP WITH BUTTONS FUNCTION------------------------->>
+
+def createmap():
+    #DISPLAYING MAP OF XC FLOOR 1 USING BUTTONS
+    statshop = tk.Button(root, text = "STAT-SHOP", width = 10, bg = "gray", fg = "white")
+    statshop.place(x = 110, y = 180)
+    xc1 = tk.Button(root, text = "XC-1", width = 10, bg = "gray", fg = "white")
+    xc1.place(x = 190, y = 180)
+    xc2 = tk.Button(root, text = "XC-2", width = 10, bg = "gray", fg = "white")
+    xc2.place(x = 270, y = 180)
+    xc3 = tk.Button(root, text = "XC-3", width = 10, bg = "gray", fg = "white")
+    xc3.place(x = 350, y = 180)
+    xc4 = tk.Button(root, text = "XC-4", width = 10, bg = "gray", fg = "white")
+    xc4.place(x = 430, y = 180)
+    sacs = tk.Button(root, text = "SA-CS", width = 10, bg = "gray", fg = "white")
+    sacs.place(x = 510, y = 180)
+    saeee = tk.Button(root, text = "SA-EEE", width = 10, bg = "gray", fg = "white")
+    saeee.place(x = 590, y = 180)
+    lobby = tk.Button(root, text = "LOBBY", width = 10, bg = "gray", fg = "white")
+    lobby.place(x = 670, y = 180)
+    xc5 = tk.Button(root, text = "XC-5", width = 10, bg = "gray", fg = "white")
+    xc5.place(x = 750, y = 180)
+    xc6 = tk.Button(root, text = "XC-6", width = 10, bg = "gray", fg = "white")
+    xc6.place(x = 830, y = 180)
+    xc7 = tk.Button(root, text = "XC-7", width = 10, bg = "gray", fg = "white")
+    xc7.place(x = 910, y = 180)
+    xc8 = tk.Button(root, text = "XC-8", width = 10, bg = "gray", fg = "white")
+    xc8.place(x = 990, y = 180)
+    eelab = tk.Button(root, text = "EE-LAB", width = 10, bg = "gray", fg = "white")
+    eelab.place(x = 1070, y = 180)
+    
+    mainlobby = tk.Button(root, text = "GROUND FLOOR", width = 147, bg = "gray", fg = "white")
+    mainlobby.place(x = 110, y = 207)
+    
+    hodcs = tk.Button(root, text = "HOD-CS", width = 13, bg = "gray", fg = "white")
+    hodcs.place(x = 110, y = 234)
+    hodmedia = tk.Button(root, text = "HOD-MEDIA", width = 13, bg = "gray", fg = "white")
+    hodmedia.place(x = 214, y = 234)
+    hodeee = tk.Button(root, text = "HOD-EEE", width = 13, bg = "gray", fg = "white")
+    hodeee.place(x = 318, y = 234)
+    wrlady = tk.Button(root, text = "WR-LADY", width = 13, bg = "gray", fg = "white")
+    wrlady.place(x = 422, y = 234)
+    admin = tk.Button(root, text = "ADMIN", width = 13, bg = "gray", fg = "white")
+    admin.place(x = 526, y = 234)
+    stairs = tk.Button(root, text = "STAIRS", width = 13, bg = "gray", fg = "white")
+    stairs.place(x = 630, y = 234)
+    girlscom = tk.Button(root, text = "GIRLS-COM", width = 13, bg = "gray", fg = "white")
+    girlscom.place(x = 734, y = 234)
+    wrgents = tk.Button(root, text = "WR_GENTS", width = 13, bg = "gray", fg = "white")
+    wrgents.place(x = 838, y = 234)
+    stairs = tk.Button(root, text = "STAIRS", width = 13, bg = "gray", fg = "white")
+    stairs.place(x = 942, y = 234)
+    facultycub = tk.Button(root, text = "FACULTY-CUB", width = 13, bg = "gray", fg = "white")
+    facultycub.place(x = 1046, y = 234)
+
+    #DISPLAYING MAP OF XC FLOOR 2 USING BUTTONS
+    xc9 = tk.Button(root, text = "XC-9", width = 11, bg = "gray", fg = "white")
+    xc9.place(x = 110, y = 280)
+    xc10 = tk.Button(root, text = "XC-10", width = 11, bg = "gray", fg = "white")
+    xc10.place(x = 197, y = 280)
+    xc11 = tk.Button(root, text = "XC-11", width = 11, bg = "gray", fg = "white")
+    xc11.place(x = 283, y = 280)
+    xc12 = tk.Button(root, text = "XC-12", width = 11, bg = "gray", fg = "white")
+    xc12.place(x = 370, y = 280)
+    xc13 = tk.Button(root, text = "XC-13", width = 11, bg = "gray", fg = "white")
+    xc13.place(x = 456, y = 280)
+    courtroom = tk.Button(root, text = "SA-CS", width = 11, bg = "gray", fg = "white")
+    courtroom.place(x = 543, y = 280)
+    compoff = tk.Button(root, text = "SA-EEE", width = 11, bg = "gray", fg = "white")
+    compoff.place(x = 629, y = 280)
+    xc15 = tk.Button(root, text = "LOBBY", width = 11, bg = "gray", fg = "white")
+    xc15.place(x = 716, y = 280)
+    xc16 = tk.Button(root, text = "XC-5", width = 11, bg = "gray", fg = "white")
+    xc16.place(x = 802, y = 280)
+    xc17 = tk.Button(root, text = "XC-6", width = 11, bg = "gray", fg = "white")
+    xc17.place(x = 889, y = 280)
+    xc18 = tk.Button(root, text = "XC-7", width = 11, bg = "gray", fg = "white")
+    xc18.place(x = 975, y = 280)
+    lawlib = tk.Button(root, text = "XC-8", width = 11, bg = "gray", fg = "white")
+    lawlib.place(x = 1062, y = 280)
+    
+    mainlobby = tk.Button(root, text = "FIRST FLOOR", width = 147, bg = "gray", fg = "white")
+    mainlobby.place(x = 110, y = 307)
+    
+    hodlaw = tk.Button(root, text = "HOD-LAW", width = 13, bg = "gray", fg = "white")
+    hodlaw.place(x = 110, y = 334)
+    fcr1 = tk.Button(root, text = "FC ROOMS-1", width = 13, bg = "gray", fg = "white")
+    fcr1.place(x = 214, y = 334)
+    fclaw = tk.Button(root, text = "FC LAW", width = 13, bg = "gray", fg = "white")
+    fclaw.place(x = 318, y = 334)
+    salaw = tk.Button(root, text = "SA-LAW", width = 13, bg = "gray", fg = "white")
+    salaw.place(x = 422, y = 334)
+    stairs = tk.Button(root, text = "STAIRS", width = 13, bg = "gray", fg = "white")
+    stairs.place(x = 526, y = 334)
+    wrlady = tk.Button(root, text = "WR-LADY", width = 13, bg = "gray", fg = "white")
+    wrlady.place(x = 630, y = 334)
+    fcoff = tk.Button(root, text = "FC OFFICES", width = 13, bg = "gray", fg = "white")
+    fcoff.place(x = 734, y = 334)
+    wrgents = tk.Button(root, text = "WR-GENTS", width = 13, bg = "gray", fg = "white")
+    wrgents.place(x = 838, y = 334)
+    stairs = tk.Button(root, text = "STAIRS", width = 13, bg = "gray", fg = "white")
+    stairs.place(x = 942, y = 334)
+    fcr2 = tk.Button(root, text = "FC ROOMS-2", width = 13, bg = "gray", fg = "white")
+    fcr2.place(x = 1046, y = 334)
+    
+    #DISPLAYING MAP OF XC FLOOR 3 USING BUTTONS
+    xc19 = tk.Button(root, text = "XC-19", width = 11, bg = "gray", fg = "white")
+    xc19.place(x = 110, y = 380)
+    xc20 = tk.Button(root, text = "XC-20", width = 11, bg = "gray", fg = "white")
+    xc20.place(x = 197, y = 380)
+    xc21 = tk.Button(root, text = "XC-21", width = 11, bg = "gray", fg = "white")
+    xc21.place(x = 283, y = 380)
+    xc22 = tk.Button(root, text = "XC-22", width = 11, bg = "gray", fg = "white")
+    xc22.place(x = 370, y = 380)
+    xc23 = tk.Button(root, text = "XC-23", width = 11, bg = "gray", fg = "white")
+    xc23.place(x = 456, y = 380)
+    xc24 = tk.Button(root, text = "XC-24", width = 11, bg = "gray", fg = "white")
+    xc24.place(x = 543, y = 380)
+    xc25 = tk.Button(root, text = "XC-25", width = 11, bg = "gray", fg = "white")
+    xc25.place(x = 629, y = 380)
+    xc26 = tk.Button(root, text = "XC-26", width = 11, bg = "gray", fg = "white")
+    xc26.place(x = 716, y = 380)
+    xc27 = tk.Button(root, text = "XC-27", width = 11, bg = "gray", fg = "white")
+    xc27.place(x = 802, y = 380)
+    xc28 = tk.Button(root, text = "XC-28", width = 11, bg = "gray", fg = "white")
+    xc28.place(x = 889, y = 380)
+    xc29 = tk.Button(root, text = "XC-29", width = 11, bg = "gray", fg = "white")
+    xc29.place(x = 975, y = 380)
+    xclab = tk.Button(root, text = "XC LAB", width = 11, bg = "gray", fg = "white")
+    xclab.place(x = 1062, y = 380)
+    
+    mainlobby = tk.Button(root, text = "SECOND FLOOR", width = 147, bg = "gray", fg = "white")
+    mainlobby.place(x = 110, y = 407)
+    
+    mediahouse = tk.Button(root, text = "MEDIA HS", width = 13, bg = "gray", fg = "white")
+    mediahouse.place(x = 110, y = 434)
+    newsroom = tk.Button(root, text = "NEWS ROOM", width = 13, bg = "gray", fg = "white")
+    newsroom.place(x = 214, y = 434)
+    eslab = tk.Button(root, text = "ES LAB", width = 13, bg = "gray", fg = "white")
+    eslab.place(x = 318, y = 434)
+    stairs = tk.Button(root, text = "STAIRS", width = 13, bg = "gray", fg = "white")
+    stairs.place(x = 422, y = 434)
+    wrlady = tk.Button(root, text = "WR-LADY", width = 13, bg = "gray", fg = "white")
+    wrlady.place(x = 526, y = 434)
+    wrgents = tk.Button(root, text = "WR-GENTS", width = 13, bg = "gray", fg = "white")
+    wrgents.place(x = 630, y = 434)
+    stairs = tk.Button(root, text = "STAIRS", width = 13, bg = "gray", fg = "white")
+    stairs.place(x = 734, y = 434)
+    cctvroom = tk.Button(root, text = "CCTV ROOM", width = 13, bg = "gray", fg = "white")
+    cctvroom.place(x = 838, y = 434)
+    itroom = tk.Button(root, text = "IT ROOM", width = 13, bg = "gray", fg = "white")
+    itroom.place(x = 942, y = 434)
+    cslab = tk.Button(root, text = "CS LAB", width = 13, bg = "gray", fg = "white")
+    cslab.place(x = 1046, y = 434)
+    
+#<<-------------------------FUNCTIONS FOR EXECUTING QURIES------------------------->>
+
+def whereis():
+    room1 = entrybox1.get()
+    prolog = Prolog()
+    prolog.consult("projectCode.pl")
+    query = "whereis("+room1+")"
+    result = str(list(prolog.query(query)))
+    length = len(query)
+    if (query[length-3] == '9'):
+        result = "FLOOR 2"
+    elif ((query[length-4] != 'c') and (query[length-4] != 'i') and (query[length-4] != 'E')):
+        result = "FLOOR 2"
+    else:
+        result = "FLOOR 1"
+    Output.insert(tk.END, result)
+    createmap()
+
+def exist():
+    room1 = entrybox1.get()
+    floor = entrybox3.get()
+    prolog = Prolog()
+    prolog.consult("projectCode.pl")
+    query = "exist("+room1+", floor"+floor+")"
+    result = bool(list(prolog.query(query)))
+    if result == 0:
+        result = "FALSE"
+    else:
+        result = "TRUE"
+    Output.insert(tk.END, result)
+    createmap()
+    
+def pathfrom(): 
+    room1 = entrybox1.get()
+    room2 = entrybox2.get()
+    prolog = Prolog()
+    prolog.consult("projectCode.pl")
+    query = "pathfrom("+room1+", "+room2+", F)"
+    result = str(list(prolog.query(query)))
+    print(result)
+    if ((len(result)) < 2):
+        result = "NOT CONNECTED ON SAME FLOOR"
+    else:
+        result = "CONNECTED AT FLOOR: " + result
+    Output.insert(tk.END, result)
+    createmap()
+    
+def connected():
+    room1 = entrybox1.get()
+    room2 = entrybox2.get()
+    floor = entrybox3.get()
+    prolog = Prolog()
+    prolog.consult("projectCodeNew.pl")
+    query = "connected("+room1+", "+room2+", floor"+floor+", F)"
+    result = str(list(prolog.query(query)))
+    print(result)
+    if ((len(result)) < 10):
+        result = "NOT CONNECTED ON SAME FLOOR"
+    else:
+        result = "CONNECTED AT FLOOR: " + result
+    Output.insert(tk.END, result)
+    createmap()
+    
+def dfs():
+    room1 = entrybox1.get()
+    room2 = entrybox2.get()
+    prolog = Prolog()
+    prolog.consult("projectCode.pl")
+    query = "dfs("+room1+", "+room2+", F)"
+    result = str(list(prolog.query(query)))
+    print(result)
+    if ((len(result)) < 10):
+        result = "NOT CONNECTED ON SAME FLOOR"
+    else:
+        result = "CONNECTED AT FLOOR: " + result
+    Output.insert(tk.END, result)
+    createmap()
+
+#<<-------------------------MAIN CODE WITH GUI USED FOR USER FRIENDLY ENVIRONMENT------------------------->>
+
+root = tk.Tk()
+root.title("XC CAMPUS MAP")
+root.geometry("1260x650")
+root.config(bg = "green")
+
+#DISPLAY BOX 01
+dispbox1 = tk.Label(root, text = "ENTER ROOM NUMBER 01", bg = "white", fg = "blue", font = "Ariel 15 bold")
+dispbox1.place(x = 200, y = 10)
+
+#ENTRY BOX 01 FOR QUERY
+entrybox1 = tk.Entry(root, width = 30, bg = "light cyan", fg = "red")
+entrybox1.place(x = 240, y = 50)
+
+#DISPLAY BOX 02
+dispbox2 = tk.Label(root, text = "ENTER ROOM NUMBER 02", bg = "white", fg = "blue", font = "Ariel 15 bold")
+dispbox2.place(x = 500, y = 10)
+
+#ENTRY BOX 02 FOR QUERY
+entrybox2 = tk.Entry(root, width = 30, bg = "light cyan", fg = "red")
+entrybox2.place(x = 540, y = 50)
+
+#DISPLAY BOX 03
+dispbox2 = tk.Label(root, text = "ENTER FLOOR NUMBER", bg = "white", fg = "blue", font = "Ariel 15 bold")
+dispbox2.place(x = 800, y = 10)
+
+#ENTRY BOX 03 FOR QUERY
+entrybox3 = tk.Entry(root, width = 30, bg = "light cyan", fg = "red")
+entrybox3.place(x = 830, y = 50)
+
+#OUTPUT BOX TO DISPLAY RESULT
+Output = tk.Text(root, height = 5, width = 70, bg = "white", fg = "black")
+Output.place(x = 350, y = 85)
+
+#DISPLAY BUTTON 01
+whereis = tk.Button(root, text = "'WHERE IS' QUERY", width = 25, bg = "#856ff8", fg = "white", padx = 10, pady = 10, command = whereis)
+whereis.place(x = 120, y = 510)
+#DISPLAY BUTTON 02
+exist = tk.Button(root, text = "'EXIST' QUERY", width = 25, bg = "#856ff8", fg = "white", padx = 10, pady = 10, command = exist)
+exist.place(x = 325, y = 510)
+#DISPLAY BUTTON 03
+pathfrom = tk.Button(root, text = "'PATH FROM' QUERY", width = 25, bg = "#856ff8", fg = "white", padx = 10, pady = 10, command = pathfrom)
+pathfrom.place(x = 530, y = 510)
+#DISPLAY BUTTON 04
+connected = tk.Button(root, text = "'CONNECTED' QUERY", width = 25, bg = "#856ff8", fg = "white", padx = 10, pady = 10, command = connected)
+connected.place(x = 735, y = 510)
+#DISPLAY BUTTON 05
+dfs = tk.Button(root, text = "'DFS' QUERY", width = 25, bg = "#856ff8", fg = "white", padx = 10, pady = 10, command = dfs)
+dfs.place(x = 940, y = 510)
+
+#EXIT BUTTON
+dfs = tk.Button(root, text = "EXIT", width = 25, bg = "#856ff8", fg = "white", padx = 10, pady = 10, command = root.destroy)
+dfs.place(x = 530, y = 560)
+
+root.mainloop()
